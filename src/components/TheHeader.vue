@@ -1,13 +1,13 @@
 <template>
-  <TheHeader />
+  <Logo />
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader.vue";
+import Logo from "./Logo.vue";
 
 export default {
   components: {
-    TheHeader
+    Logo
   }
 }
 </script>
