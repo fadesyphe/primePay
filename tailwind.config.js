@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'jost': ['"Jost"', "sans-serif"],
+      'inter': ["Inter", "sans-serif"],
+      'open': ["Open Sans", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        'primary': '#231656',
+        'secondary': '#625FFB',
+        'content': '#4E4E4E',
+      }
+    }
   },
   plugins: [],
 }

@@ -1,13 +1,19 @@
 <template>
-  <Logo />
+  <div class="max-w-[1400px] mx-auto py-10 flex items-center justify-between">
+    <BaseLogo />
+    <TheMenu />
+  </div>
+
 </template>
 
 <script>
-import Logo from "./Logo.vue";
+import BaseLogo from "./BaseLogo.vue";
+import TheMenu from "./TheMenu.vue";
 
 export default {
   components: {
-    Logo
+    BaseLogo,
+    TheMenu
   }
 }
 </script>
