@@ -15,6 +15,9 @@ export default {
         'primary': '#231656',
         'secondary': '#625FFB',
         'content': '#4E4E4E',
+      },
+      backgroundImage: {
+        'home-main': "url(./src/assets/images/background-home.png)"
       }
     }
   },

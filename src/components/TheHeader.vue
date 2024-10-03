@@ -1,9 +1,9 @@
 <template>
-  <div class="max-w-[1400px] mx-auto py-10 flex items-center justify-between">
+  <header class="max-w-[1440px] w-full px-4 mx-auto py-10 flex items-center justify-between">
     <BaseLogo />
     <TheMenu />
-    <BaseButton class="text-white" @click="login">login</BaseButton>
-  </div>
+    <BaseButton class="text-white bg-primary" @click="login">login</BaseButton>
+  </header>
 
 </template>
 
