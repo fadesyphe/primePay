@@ -1,34 +1,35 @@
 <template>
-  <div class="w-full max-w-[1440px] mx-auto px-5 flex wrap justify-between">
-    <div class="max-w-[430px] text-center">
-      <BaseIcon name="account" viewBox="0 0 130 90" class="w-[130px] h-[90px] fill-transparent mx-auto"/>
-      <h3 class="mt-8 mb-2 font-jost font-medium text-primary text-3xl">Creat an account</h3>
-      <p class="text-xl leading-8 text-content font-open capitalize">
-        Aspernatur sit adipisci quaerat unde Redug Lagre dolor sit amets consectetus. Agencies define their new business
-      </p>
-    </div>
-    <div class="max-w-[430px] text-center">
-      <BaseIcon name="bank" viewBox="0 0 177 132" class="w-[177px] h-[132px] fill-transparent mx-auto"/>
-      <h3 class="mt-8 mb-2 font-jost font-medium text-primary text-3xl">Attach bank accounts</h3>
-      <p class="text-xl leading-8 text-content font-open capitalize">
-        Aspernatur sit adipisci quaerat unde Redug Lagre dolor sit amets consectetus. Agencies define their new business
-      </p>
-    </div>
-    <div class="max-w-[430px] text-center">
-      <BaseIcon name="money" viewBox="0 0 180 140" class="w-[180px] h-[140px] fill-transparent mx-auto"/>
-      <h3 class="mt-8 mb-2 font-jost font-medium text-primary text-3xl">Send money</h3>
-      <p class="text-xl leading-8 text-content font-open capitalize">
-        Aspernatur sit adipisci quaerat unde Redug Lagre dolor sit amets consectetus. Agencies define their new business
-      </p>
-    </div>
+  <div class="w-full max-w-[1440px] mx-auto px-5 pb-40 flex wrap justify-between items-end">
+    <WorkDescriptionItem
+    v-for="item in list"
+    :key="item.title"
+    :title="item.title"
+    :nameIcon="item.nameIcon"
+    :classesIcon="item.classesIcon"
+    :viewBox="item.viewBox"
+    >
+      Aspernatur sit adipisci quaerat unde Redug Lagre dolor sit amets consectetus. Agencies define their new business
+    </WorkDescriptionItem>
+
   </div>
 </template>
 
 <script>
-import BaseIcon from "./BaseIcon.vue"
+import WorkDescriptionItem from "./WorkDescriptionItem.vue"
+
 export default {
   components: {
-    BaseIcon
+    WorkDescriptionItem
+  },
+
+  data() {
+    return {
+      list: [
+        {title: "Creat an account", nameIcon: "account", viewBox: "0 0 234 90", classesIcon: "w-[234px] h-[90px]"},
+        {title: "Attach bank accounts", nameIcon: "bank", viewBox: "0 0 234 96", classesIcon: "w-[234px] h-[96px]"},
+        {title: "Send money", nameIcon: "money", viewBox: "0 0 210 92", classesIcon: "w-[210px] h-[92px]"}
+      ]
+    }
   }
 }
 </script>
