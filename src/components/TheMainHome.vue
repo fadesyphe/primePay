@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full bg-home-main bg-no-repeat bg-contain pt-32 relative mb-6">
+  <main class="w-full bg-home-main bg-no-repeat bg-contain bg-center pt-32 relative mb-6">
     <div class="w-full max-w-[1440px] px-4 mx-auto pb-[528px]">
       <div class="w-full max-w-[840px] text-center text-primary font-semibold capitalize mx-auto">
         <h1 class="text-[80px] leading-[1.15] font-just">Ready to launch your online <span class="text-white">payment</span> app</h1>

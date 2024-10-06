@@ -15,6 +15,7 @@ export default {
         'primary': '#231656',
         'secondary': '#625FFB',
         'content': '#4E4E4E',
+        'tertiary': '#3D3269',
         'base': '#F5F5F5',
         'gray-bg': '#F8F8F8',
       },
