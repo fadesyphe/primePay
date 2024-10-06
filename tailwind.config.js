@@ -20,7 +20,8 @@ export default {
         'gray-bg': '#F8F8F8',
       },
       backgroundImage: {
-        'home-main': "url(./src/assets/images/background-home.png)"
+        'home-main': "url(./src/assets/images/background-home.png)",
+        'testimonials': "url(./src/assets/images/background-testimonials.png)",
       }
     }
   },
